@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/iago-portfolio/', // Base path for GitHub Pages deployment
+  base: '/', // Base path for custom domain deployment
   server: {
     port: 3000,
     open: true
