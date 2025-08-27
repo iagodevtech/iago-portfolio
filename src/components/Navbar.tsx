@@ -32,6 +32,22 @@ const Navbar: React.FC = () => {
     setIsMobileMenuOpen(false);
   };
 
+  // Scroll suave para o topo
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
+
+  // Função para navegar para home e ir para o topo
+  const handleHomeClick = () => {
+    closeMobileMenu();
+    if (location.pathname === '/') {
+      scrollToTop();
+    }
+  };
+
   // Verificar se o link está ativo
   const isActive = (path: string) => {
     return location.pathname === path;
@@ -42,7 +58,7 @@ const Navbar: React.FC = () => {
       <div className="navbar-container">
         {/* Logo */}
         <div className="nav-logo">
-          <Link to="/" onClick={closeMobileMenu}>
+          <Link to="/" onClick={handleHomeClick}>
             <span className="logo-text">Iago</span>
             <span className="logo-text-secondary">Dev</span>
           </Link>
@@ -54,7 +70,7 @@ const Navbar: React.FC = () => {
             <Link
               to="/"
               className={`navbar-link ${isActive('/') ? 'active' : ''}`}
-              onClick={closeMobileMenu}
+              onClick={handleHomeClick}
             >
               <span className="nav-icon">🏠</span>
               INÍCIO

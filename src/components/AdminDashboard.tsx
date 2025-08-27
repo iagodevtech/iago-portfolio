@@ -1,12 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import {
-  FaHeart,
-  FaUsers,
-  FaChartLine,
-  FaDownload,
-  FaEye,
-} from 'react-icons/fa';
+import { FaHeart, FaUsers, FaDownload, FaEye } from 'react-icons/fa';
 import { likesService } from '../services/likesService';
 import './AdminDashboard.css';
 
@@ -69,11 +63,6 @@ const AdminDashboard: React.FC = () => {
     return new Date(dateString).toLocaleString('pt-BR');
   };
 
-  const likeRate =
-    stats.total_visitors > 0
-      ? ((stats.total_likes / stats.total_visitors) * 100).toFixed(1)
-      : '0';
-
   if (isLoading) {
     return (
       <div className="admin-dashboard">
@@ -119,19 +108,6 @@ const AdminDashboard: React.FC = () => {
           <div className="stat-content">
             <div className="stat-value">{stats.total_visitors}</div>
             <div className="stat-label">Total de Visitantes</div>
-          </div>
-        </motion.div>
-
-        <motion.div
-          className="stat-card"
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5, delay: 0.3 }}
-        >
-          <FaChartLine className="stat-icon" />
-          <div className="stat-content">
-            <div className="stat-value">{likeRate}%</div>
-            <div className="stat-label">Taxa de Aprovação</div>
           </div>
         </motion.div>
       </div>

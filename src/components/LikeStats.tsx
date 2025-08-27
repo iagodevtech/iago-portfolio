@@ -1,11 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaHeart, FaUsers, FaChartLine, FaTrophy } from 'react-icons/fa';
+import { FaHeart, FaUsers, FaTrophy } from 'react-icons/fa';
 import { useLikes } from '../hooks/useLikes';
 import './LikeStats.css';
 
 const LikeStats: React.FC = () => {
-  const { likes, totalVisitors, likeRate } = useLikes();
+  const { likes, totalVisitors } = useLikes();
 
   const stats = [
     {
@@ -21,13 +21,6 @@ const LikeStats: React.FC = () => {
       value: totalVisitors,
       color: '#3b82f6',
       description: 'Total de visitas',
-    },
-    {
-      icon: <FaChartLine />,
-      label: 'Taxa de Aprovação',
-      value: `${likeRate}%`,
-      color: '#10b981',
-      description: 'Curtidas por visita',
     },
   ];
 

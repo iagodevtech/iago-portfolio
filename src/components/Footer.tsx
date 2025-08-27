@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import {
   FaGithub,
@@ -12,8 +12,17 @@ import { FaXTwitter } from 'react-icons/fa6';
 import './Footer.css';
 
 const Footer: React.FC = () => {
+  const location = useLocation();
+
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  // Função para navegar para home e ir para o topo
+  const handleHomeClick = () => {
+    if (location.pathname === '/') {
+      scrollToTop();
+    }
   };
 
   const socialLinks = [
@@ -111,7 +120,12 @@ const Footer: React.FC = () => {
                     transition={{ duration: 0.3, delay: 0.1 + index * 0.05 }}
                     viewport={{ once: true }}
                   >
-                    <Link to={link.path}>{link.label}</Link>
+                    <Link
+                      to={link.path}
+                      onClick={link.path === '/' ? handleHomeClick : undefined}
+                    >
+                      {link.label}
+                    </Link>
                   </motion.li>
                 ))}
               </ul>
