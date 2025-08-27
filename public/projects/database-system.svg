@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250" width="400" height="250">
+  <rect width="400" height="250" fill="#e5e7eb"/>
+  <rect x="50" y="40" width="300" height="170" rx="10" fill="#ffffff" stroke="#d1d5db" stroke-width="2"/>
+  <ellipse cx="150" cy="80" rx="40" ry="15" fill="#3b82f6"/>
+  <rect x="110" y="80" width="80" height="30" fill="#3b82f6"/>
+  <ellipse cx="150" cy="110" rx="40" ry="15" fill="#3b82f6"/>
+  <ellipse cx="250" cy="80" rx="40" ry="15" fill="#10b981"/>
+  <rect x="210" y="80" width="80" height="30" fill="#10b981"/>
+  <ellipse cx="250" cy="110" rx="40" ry="15" fill="#10b981"/>
+  <line x1="190" y1="95" x2="210" y2="95" stroke="#6b7280" stroke-width="2"/>
+  <text x="200" y="230" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#6b7280">Database Management System</text>
+</svg>

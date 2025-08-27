@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250" width="400" height="250">
+  <rect width="400" height="250" fill="#e5e7eb"/>
+  <rect x="50" y="50" width="300" height="150" rx="10" fill="#ffffff" stroke="#d1d5db" stroke-width="2"/>
+  <rect x="70" y="70" width="60" height="40" fill="#3b82f6"/>
+  <rect x="140" y="70" width="80" height="8" fill="#d1d5db"/>
+  <rect x="140" y="85" width="60" height="8" fill="#d1d5db"/>
+  <rect x="140" y="100" width="40" height="8" fill="#d1d5db"/>
+  <rect x="270" y="75" width="60" height="20" rx="5" fill="#10b981"/>
+  <text x="200" y="230" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#6b7280">E-commerce Platform</text>
+</svg>

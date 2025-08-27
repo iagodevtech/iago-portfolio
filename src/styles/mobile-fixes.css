@@ -1,0 +1,37 @@
+@media screen and (max-width: 414px) {
+  /* iPhone 11 e similares */
+  .hero-title {
+    font-size: 1.8rem !important;
+    line-height: 1.2 !important;
+  }
+  
+  .hero-subtitle {
+    font-size: 0.95rem !important;
+    line-height: 1.4 !important;
+  }
+  
+  .hero-description {
+    font-size: 0.85rem !important;
+    line-height: 1.5 !important;
+  }
+  
+  .social-button {
+    width: 55px !important;
+    height: 55px !important;
+    font-size: 0.75rem !important;
+  }
+  
+  .hero-content {
+    padding: 20px 10px !important;
+  }
+  
+  .hero-image {
+    max-width: 200px !important;
+    height: auto !important;
+  }
+}
+
+/* Previne zoom no iOS */
+input, textarea, select {
+  font-size: 16px !important;
+}

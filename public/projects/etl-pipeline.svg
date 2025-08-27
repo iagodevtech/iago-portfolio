@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250" width="400" height="250">
+  <rect width="400" height="250" fill="#e5e7eb"/>
+  <rect x="30" y="80" width="60" height="40" rx="5" fill="#3b82f6"/>
+  <text x="60" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#ffffff">Extract</text>
+  <rect x="170" y="80" width="60" height="40" rx="5" fill="#10b981"/>
+  <text x="200" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#ffffff">Transform</text>
+  <rect x="310" y="80" width="60" height="40" rx="5" fill="#f59e0b"/>
+  <text x="340" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#ffffff">Load</text>
+  <line x1="90" y1="100" x2="170" y2="100" stroke="#6b7280" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <line x1="230" y1="100" x2="310" y2="100" stroke="#6b7280" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#6b7280"/>
+    </marker>
+  </defs>
+  <text x="200" y="230" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#6b7280">Data Pipeline ETL</text>
+</svg>

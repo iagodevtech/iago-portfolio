@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250" width="400" height="250">
+  <rect width="400" height="250" fill="#e5e7eb"/>
+  <rect x="50" y="40" width="300" height="170" rx="10" fill="#1f2937" stroke="#374151" stroke-width="2"/>
+  <text x="70" y="70" font-family="monospace" font-size="12" fill="#10b981">GET /api/users</text>
+  <text x="70" y="90" font-family="monospace" font-size="12" fill="#3b82f6">POST /api/auth/login</text>
+  <text x="70" y="110" font-family="monospace" font-size="12" fill="#f59e0b">PUT /api/users/:id</text>
+  <text x="70" y="130" font-family="monospace" font-size="12" fill="#ef4444">DELETE /api/users/:id</text>
+  <rect x="70" y="150" width="200" height="30" fill="#374151" stroke="#4b5563"/>
+  <text x="80" y="170" font-family="monospace" font-size="10" fill="#d1d5db">{"status": "success", "data": {...}}</text>
+  <text x="200" y="230" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#6b7280">API REST - Node.js</text>
+</svg>

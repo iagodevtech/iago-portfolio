@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250" width="400" height="250">
+  <rect width="400" height="250" fill="#e5e7eb"/>
+  <rect x="40" y="40" width="320" height="170" rx="10" fill="#ffffff" stroke="#d1d5db" stroke-width="2"/>
+  <rect x="60" y="60" width="280" height="25" fill="#742774"/>
+  <text x="200" y="78" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#ffffff">PowerApps Dashboard</text>
+  <rect x="60" y="100" width="130" height="80" fill="#f3f4f6" stroke="#d1d5db"/>
+  <rect x="70" y="110" width="110" height="8" fill="#742774"/>
+  <rect x="70" y="125" width="80" height="8" fill="#d1d5db"/>
+  <rect x="70" y="140" width="90" height="8" fill="#d1d5db"/>
+  <rect x="210" y="100" width="130" height="80" fill="#f3f4f6" stroke="#d1d5db"/>
+  <circle cx="275" cy="140" r="25" fill="#742774"/>
+  <text x="200" y="230" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#6b7280">PowerApps Dashboard</text>
+</svg>

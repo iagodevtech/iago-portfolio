@@ -1,0 +1,6 @@
+option batch abort
+option confirm off
+open sftp://iagoal00:34l3bgW2dZ@iagodev.online
+cd /public_html/
+put .htaccess
+exit
