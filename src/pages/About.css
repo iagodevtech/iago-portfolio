@@ -1,6 +1,13 @@
 .about {
   padding-top: 70px;
   overflow-x: hidden;
+  width: 100%;
+  max-width: 100vw;
+}
+
+.about * {
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 /* About Hero */
@@ -39,14 +46,19 @@
   width: 100%;
 }
 
+.personal-info .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-lg);
+  width: 100%;
+  box-sizing: border-box;
+}
+
 .info-content {
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: var(--spacing-3xl);
   align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 var(--spacing-lg);
   width: 100%;
   box-sizing: border-box;
 }
@@ -457,10 +469,19 @@
     font-size: 1.25rem;
   }
 
-  .info-content {
+  .personal-info .container {
     padding: 0 var(--spacing-md);
+  }
+
+  .info-content {
     grid-template-columns: 1fr;
     gap: var(--spacing-xl);
+  }
+
+  .info-text {
+    padding: 0;
+    margin: 0;
+    width: 100%;
   }
 
   .info-text p {
@@ -468,11 +489,15 @@
     line-height: 1.6;
     word-wrap: break-word;
     overflow-wrap: break-word;
+    hyphens: auto;
+    max-width: 100%;
+    margin: 0 0 var(--spacing-lg) 0;
   }
 
   .profile-photo {
     width: 300px;
     height: 300px;
+    max-width: 100%;
   }
 
   .profile-placeholder-large {
@@ -507,10 +532,19 @@
     font-size: 1.1rem;
   }
 
-  .info-content {
+  .personal-info .container {
     padding: 0 var(--spacing-sm);
+  }
+
+  .info-content {
     grid-template-columns: 1fr;
     gap: var(--spacing-lg);
+  }
+
+  .info-text {
+    padding: 0;
+    margin: 0;
+    width: 100%;
   }
 
   .info-text p {
@@ -518,11 +552,15 @@
     line-height: 1.5;
     word-wrap: break-word;
     overflow-wrap: break-word;
+    hyphens: auto;
+    max-width: 100%;
+    margin: 0 0 var(--spacing-md) 0;
   }
 
   .profile-photo {
     width: 250px;
     height: 250px;
+    max-width: 100%;
   }
 
   .profile-placeholder-large {
