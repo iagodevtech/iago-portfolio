@@ -38,7 +38,7 @@
   color: var(--text-light);
 }
 
-/* Personal Info */
+/* Personal Info - Correções específicas */
 .personal-info {
   padding: var(--spacing-3xl) 0;
   background: var(--bg-primary);
@@ -63,6 +63,11 @@
   box-sizing: border-box;
 }
 
+.info-text {
+  width: 100%;
+  box-sizing: border-box;
+}
+
 .info-text h2 {
   color: var(--text-primary);
   margin-bottom: var(--spacing-lg);
@@ -76,6 +81,7 @@
   word-wrap: break-word;
   overflow-wrap: break-word;
   hyphens: auto;
+  max-width: 100%;
 }
 
 .info-image {
@@ -482,6 +488,7 @@
     padding: 0;
     margin: 0;
     width: 100%;
+    max-width: 100%;
   }
 
   .info-text p {
@@ -492,6 +499,7 @@
     hyphens: auto;
     max-width: 100%;
     margin: 0 0 var(--spacing-lg) 0;
+    padding: 0;
   }
 
   .profile-photo {
@@ -545,6 +553,7 @@
     padding: 0;
     margin: 0;
     width: 100%;
+    max-width: 100%;
   }
 
   .info-text p {
@@ -555,6 +564,7 @@
     hyphens: auto;
     max-width: 100%;
     margin: 0 0 var(--spacing-md) 0;
+    padding: 0;
   }
 
   .profile-photo {
