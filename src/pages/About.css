@@ -10,6 +10,21 @@
   box-sizing: border-box;
 }
 
+/* Força quebra de linha em todos os textos */
+.about p,
+.about h1,
+.about h2,
+.about h3,
+.about h4,
+.about h5,
+.about h6 {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
 /* About Hero */
 .about-hero {
   background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
@@ -44,6 +59,7 @@
   background: var(--bg-primary);
   overflow-x: hidden;
   width: 100%;
+  max-width: 100vw;
 }
 
 .personal-info .container {
@@ -52,6 +68,7 @@
   padding: 0 var(--spacing-lg);
   width: 100%;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .info-content {
@@ -61,16 +78,21 @@
   align-items: center;
   width: 100%;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .info-text {
   width: 100%;
   box-sizing: border-box;
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 .info-text h2 {
   color: var(--text-primary);
   margin-bottom: var(--spacing-lg);
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .info-text p {
@@ -82,11 +104,15 @@
   overflow-wrap: break-word;
   hyphens: auto;
   max-width: 100%;
+  box-sizing: border-box;
 }
 
 .info-image {
   display: flex;
   justify-content: center;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .profile-placeholder-large {
@@ -475,19 +501,40 @@
     font-size: 1.25rem;
   }
 
+  .personal-info {
+    padding: var(--spacing-xl) 0;
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100vw;
+  }
+
   .personal-info .container {
     padding: 0 var(--spacing-md);
+    max-width: 100%;
+    width: 100%;
+    overflow-x: hidden;
   }
 
   .info-content {
     grid-template-columns: 1fr;
     gap: var(--spacing-xl);
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
   }
 
   .info-text {
     padding: 0;
     margin: 0;
     width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .info-text h2 {
+    font-size: 1.8rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
     max-width: 100%;
   }
 
@@ -500,12 +547,20 @@
     max-width: 100%;
     margin: 0 0 var(--spacing-lg) 0;
     padding: 0;
+    box-sizing: border-box;
+  }
+
+  .info-image {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
   }
 
   .profile-photo {
-    width: 300px;
-    height: 300px;
+    width: 280px;
+    height: 280px;
     max-width: 100%;
+    overflow: hidden;
   }
 
   .profile-placeholder-large {
@@ -540,19 +595,40 @@
     font-size: 1.1rem;
   }
 
+  .personal-info {
+    padding: var(--spacing-lg) 0;
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100vw;
+  }
+
   .personal-info .container {
     padding: 0 var(--spacing-sm);
+    max-width: 100%;
+    width: 100%;
+    overflow-x: hidden;
   }
 
   .info-content {
     grid-template-columns: 1fr;
     gap: var(--spacing-lg);
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
   }
 
   .info-text {
     padding: 0;
     margin: 0;
     width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .info-text h2 {
+    font-size: 1.5rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
     max-width: 100%;
   }
 
@@ -565,12 +641,20 @@
     max-width: 100%;
     margin: 0 0 var(--spacing-md) 0;
     padding: 0;
+    box-sizing: border-box;
+  }
+
+  .info-image {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
   }
 
   .profile-photo {
-    width: 250px;
-    height: 250px;
+    width: 220px;
+    height: 220px;
     max-width: 100%;
+    overflow: hidden;
   }
 
   .profile-placeholder-large {
@@ -605,6 +689,7 @@
   transition: transform 0.3s ease;
   max-width: 100%;
   height: auto;
+  box-sizing: border-box;
 }
 
 .profile-image {
@@ -612,4 +697,5 @@
   height: 100%;
   object-fit: cover;
   border-radius: 50%;
+  max-width: 100%;
 }
